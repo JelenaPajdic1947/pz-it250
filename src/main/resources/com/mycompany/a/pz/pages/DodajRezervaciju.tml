@@ -1,0 +1,20 @@
+<html t:type="layout" title="Dodaj rezervaciju"
+ t:sidebarTitle="Framework Version"
+ xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+ xmlns:p="tapestry:parameter">
+
+<div class="jumbotron">
+  <h1>Dobro dosli!</h1> 
+  <p>Samo za Administratore.</p> 
+</div>
+ <t:beaneditform object="rezervacija" exclude="id" >
+ </t:beaneditform>
+ <t:grid source="rezervacijeLista" exclude="id" add="edit,delete" row="tmprezervacija">
+ <p:editCell>
+ <t:actionlink t:id="edit" context="tmprezervacija">Edit</t:actionlink>
+ </p:editCell>
+ <p:deleteCell>
+ <t:actionlink t:id="delete" context="tmprezervacija.id">Delete</t:actionlink>
+ </p:deleteCell>
+ </t:grid>
+</html>

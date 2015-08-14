@@ -1,0 +1,20 @@
+<html t:type="layout" title="Dodaj usera"
+ t:sidebarTitle="Framework Version"
+ xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+ xmlns:p="tapestry:parameter">
+
+<div class="jumbotron">
+  <h1>Dobro dosli!</h1> 
+  <p>Samo za Administratore.</p> 
+</div>
+ <t:beaneditform object="user" exclude="id" >
+ </t:beaneditform>
+ <t:grid source="useri" exclude="id" add="edit,delete" row="oneuser">
+ <p:editCell>
+ <t:actionlink t:id="edit" context="oneuser">Edit</t:actionlink>
+ </p:editCell>
+ <p:deleteCell>
+ <t:actionlink t:id="delete" context="oneuser.id">Delete</t:actionlink>
+ </p:deleteCell>
+ </t:grid>
+</html>

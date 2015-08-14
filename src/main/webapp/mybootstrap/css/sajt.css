@@ -1,0 +1,59 @@
+body{
+background-image: url("web.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-attachment: fixed;
+}
+.navbar-inverse {
+    
+    border-color: black;
+	text-shadow: white ;
+	
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse.navbar-nav > li > a:focus {
+    color: white;
+	text-shadow:white;
+}
+.carousel {
+    height: 100%;
+	width:100%;
+	
+   
+}
+
+.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.carousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+.carousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+}
+.jumbotron{
+ background: rgb(51, 49, 49);
+   background: rgba(51, 49, 49, 0.9);
+}
+.jumbotron h1{
+color:white;
+font:bold;
+text-shadow: 3px 2px 3px black;
+
+}
+.jumbotron p{
+color:white;
+text-shadow: 3px 2px 3px white;
+
+}

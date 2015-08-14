@@ -1,0 +1,31 @@
+<html t:type="layout" title="Dodavanje Kupovine"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+
+<div class="jumbotron">
+  <h1>Dobro dosli!</h1> 
+  <p>Samo za zaposlene</p> 
+
+<t:grid source="listaKoncerta" exclude="id">
+ </t:grid>
+</div>
+     
+      <t:beaneditform 
+        object="rezervacija" 
+        exclude="id" add=""
+       
+      >
+       <div class="eg">
+        ${koncert}
+    </div>  
+
+      </t:beaneditform>
+
+      <t:grid t:source="listaKupovina" add="delete" row="rezervacija">
+        <p:deleteCell>
+            <t:actionlink t:id="delete" context="rezervacija.id">Delete</t:actionlink>
+        </p:deleteCell>
+      </t:grid>
+</html>

@@ -1,0 +1,56 @@
+<html t:type="layout" title="About"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+      xmlns:p="tapestry:parameter">
+
+
+<style>
+.jumbotron{
+ background: rgb(51, 49, 49);
+   background: rgba(51, 49, 49, 0.9);
+}
+.jumbotron h1{
+color:white;
+font:bold;
+text-shadow: 3px 2px 3px black;
+
+}
+.jumbotron p{
+color:white;
+text-shadow: 3px 2px 3px white;
+
+}
+</style>
+<div class="jumbotron">
+  <h1>Dobro dosli!</h1> 
+  <p>Web Koncert Vam nudi pouzdanu rezervaciju i kupovinu karata za koncerte.</p> 
+</div>
+<div class="jumbotron">
+<p>
+Postojimo od 2010.godine.Sediste nam je u Beogradu,medju prvima smo pokrenuli online rezervaciju karata za koncerte.
+Takodje mozete uvek kupiti karte za koncerte na nasim prodajnim mestima sirom grada.
+
+Rezervisite svoje karte na siguran nacin i lepo se provedite.
+
+Web Koncert Team.
+ </p>
+</div>
+
+    <div class="row">
+        <div class="span12">
+            <p>About a-pz application ...</p>
+        </div>
+    </div>
+
+    <t:if test="learn">
+        <div class="row">
+            <div class="span12">
+                <p>
+                    To learn more go to
+                    <a href="http://tapestry.apache.org">Tapestry home</a>
+                    and start typing...
+                </p>
+            </div>
+        </div>
+    </t:if>
+
+</html>
