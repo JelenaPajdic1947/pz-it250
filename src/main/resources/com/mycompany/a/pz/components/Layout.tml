@@ -52,7 +52,7 @@
                         <t:pagelink page="PrikaziKoncerte">Koncerti</t:pagelink>
                     </li>					                                            
                     <li>
-                        <t:pagelink page="">Rezervisi</t:pagelink>
+                        <t:pagelink page="DodajRezervaciju">Rezervisi</t:pagelink>
                     </li>
 <li>
                         <t:pagelink page="RegistracijaKorisnika">Registracija</t:pagelink>

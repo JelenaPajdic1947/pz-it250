@@ -66,7 +66,7 @@ public class DodajRezervaciju {
        rezervacija.setKoncertId(koncert);
        rezervacija.setUserId(ulogovaniKorisnik);
         rezervacijeDao.dodajIliUpdatujRezervaciju(rezervacija);
-       
+       rezervacija = new Rezervacija();
         return this;
     }
 

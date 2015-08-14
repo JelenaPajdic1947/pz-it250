@@ -81,7 +81,7 @@ public class KupovinaDodavanje {
     @CommitAfter
     Object onSuccess() {
         rezervacija.setKoncertId(id);
-        rezervacija.setIdUsera(null);
+        rezervacija.setIdUsera(ulogovaniKorisnik);
         rezervacijaDAO.dodajIliUpdatujKupovinu(rezervacija);
         rezervacija = new Kupovina();
         return this;

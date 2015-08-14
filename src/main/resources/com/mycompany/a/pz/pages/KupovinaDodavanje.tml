@@ -23,9 +23,9 @@
 
       </t:beaneditform>
 
-      <t:grid t:source="listaKupovina" add="delete" row="rezervacija">
+      <t:grid t:source="listaKupovina" add="delete" row="rezervacijaone">
         <p:deleteCell>
-            <t:actionlink t:id="delete" context="rezervacija.id">Delete</t:actionlink>
+            <t:actionlink t:id="delete" context="rezervacijaone.id">Delete</t:actionlink>
         </p:deleteCell>
       </t:grid>
 </html>
